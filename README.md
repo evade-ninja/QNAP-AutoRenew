@@ -25,3 +25,6 @@ Reload crontab:
 `crontab /etc/config/crontab && /etc/init.d/crond.sh restart`
 
 Crontab instructions from the QNAP FAQ: <https://www.qnap.com/en/how-to/faq/article/how-to-add-jobs-to-crontab-to-schedule-a-job>
+
+
+This script is provided as-is with no warranty or support.
