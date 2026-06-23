@@ -19,7 +19,7 @@ Add an entry to the bottom of crontab to run renew.sh:
 
 `vi /etc/config/crontab`
 
-`15 4 * * * ./renew.sh "/share/CACHEDEV1_DATA/lego/lego" "/share/CACHEDEV1_DATA/lego/.lego/certificates" "nas-name.my-cool-domain.interwebs" "https://certs.my-cool-domain.interwebs/acme/acme/directory" 2>>/dev/null`
+`15 4 * * * /share/CACHEDEV1_DATA/lego/renew.sh "/share/CACHEDEV1_DATA/lego/lego" "/share/CACHEDEV1_DATA/lego/.lego/certificates" "nas-name.my-cool-domain.interwebs" "https://certs.my-cool-domain.interwebs/acme/acme/directory" 2>>/dev/null`
 
 Reload crontab:
 `crontab /etc/config/crontab && /etc/init.d/crond.sh restart`
